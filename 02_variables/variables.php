@@ -148,14 +148,14 @@
                                 <tr>
                                     <th scope="row">$SERVER</th>
                                     <td>Contient les informations liées au serveur web, tel que le contenu des en-têtes HTTP ou le nom du script en cours d'execution. Retenons les variables suivantes :
-                                    <ul>
-                                        <li><code>$_SERVER["HTTP_ACCESS_LANGUAGE"]</code>, qui contient le code de langue du navigateur client</li>
-                                        <li><code>$_SERVER["HTTP_COOKIE"]</code>, qui contient le nom et la valeur du cookie lus sur le poste client</li>
-                                        <li><code>$_SERVER["HTTP_HOST"]</code>, qui contient le nom de domaine</li>
-                                        <li><code>$_SERVER["PHP_SELF"]</code>, qui contient le nom du script en cours. Nous l'utiliserons souvent dans les formulaires.</li>
-                                        <li><code>$_SERVER["SERVER_ADDR"]</code>, qui indique l'adresse IP du serveur</li>
-                                        <li><code>$_SERVER["QUERY_STRING"]</code>, qui contient la chaîne de la requête utilisée pour accéder au script</li>
-                                    </ul>
+                                        <ul>
+                                            <li><code>$_SERVER["HTTP_ACCESS_LANGUAGE"]</code>, qui contient le code de langue du navigateur client</li>
+                                            <li><code>$_SERVER["HTTP_COOKIE"]</code>, qui contient le nom et la valeur du cookie lus sur le poste client</li>
+                                            <li><code>$_SERVER["HTTP_HOST"]</code>, qui contient le nom de domaine</li>
+                                            <li><code>$_SERVER["PHP_SELF"]</code>, qui contient le nom du script en cours. Nous l'utiliserons souvent dans les formulaires.</li>
+                                            <li><code>$_SERVER["SERVER_ADDR"]</code>, qui indique l'adresse IP du serveur</li>
+                                            <li><code>$_SERVER["QUERY_STRING"]</code>, qui contient la chaîne de la requête utilisée pour accéder au script</li>
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
@@ -168,7 +168,7 @@
                 </div>
 
                 <hr>
-                
+
                 <div class="row">
                     <div class="col-sm-12 px-4">
                         <h2><u>4 - Les opérateurs d'affectation combinés</u></h2>
@@ -184,50 +184,50 @@
                                 <tr>
                                     <th scope="row">+=</th>
                                     <td>Addition puis affectation : <br>
-                                    $x += $y équivaut à $x = $x + $y <br>
-                                    $y peut être une expression complexe dont la valeur est un nombre.</td>
+                                        $x += $y équivaut à $x = $x + $y <br>
+                                        $y peut être une expression complexe dont la valeur est un nombre.</td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">-=</th>
                                     <td>Soustraction puis affectation : <br>
-                                    $x -= $y équivaut à $x = $x - $y <br>
-                                    $y peut être une expression complexe dont la valeur est un nombre.</td>
+                                        $x -= $y équivaut à $x = $x - $y <br>
+                                        $y peut être une expression complexe dont la valeur est un nombre.</td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">*=</th>
                                     <td>Multiplication puis affectation : <br>
-                                    $x *= $y équivaut à $x = $x * $y <br>
-                                    $y peut être une expression complexe dont la valeur est un nombre.</td>
+                                        $x *= $y équivaut à $x = $x * $y <br>
+                                        $y peut être une expression complexe dont la valeur est un nombre.</td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">**</th>
                                     <td>Puissance puis affectation : <br>
-                                    $x ** $y équivaut à $x = $x * $y <br>
-                                    $y peut être une expression complexe dont la valeur est un nombre.</td>
+                                        $x ** $y équivaut à $x = $x * $y <br>
+                                        $y peut être une expression complexe dont la valeur est un nombre.</td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">/=</th>
                                     <td>Division puis affectation : <br>
-                                    $x /= $y équivaut à $x = $x / $y <br>
-                                    $y peut être une expression complexe dont la valeur est différente de 0.</td>
+                                        $x /= $y équivaut à $x = $x / $y <br>
+                                        $y peut être une expression complexe dont la valeur est différente de 0.</td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">%=</th>
                                     <td>Modulo puis affectation : <br>
-                                    $x %= $y équivaut à $x = $x % $y <br>
-                                    $y peut être une expression complexe dont la valeur est différente de 0.</td>
+                                        $x %= $y équivaut à $x = $x % $y <br>
+                                        $y peut être une expression complexe dont la valeur est différente de 0.</td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">.=</th>
                                     <td>Concaténation puis affectation : <br>
-                                    $x .= $y équivaut à $x = $x . $y <br>
-                                    $y peut être une expression littérale dont la valeur est une chaîne de caractère.</td>
+                                        $x .= $y équivaut à $x = $x . $y <br>
+                                        $y peut être une expression littérale dont la valeur est une chaîne de caractère.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -240,8 +240,69 @@
                     <div class="col-sm-12 px-4">
                         <h2 class="text-center"><u>5 - Les constantes</u></h2>
                         <p>Vous serez parfois amenés à utliser de manière répétitive des informations devant rester constantesdans toutes les pages d'un même site. Il peut s'agir de texte ou de nombre qui reviennent souvent. Pour ne pas risquer l'écrasement accidentel de ces valeurs, ce qui pourrait produire si elles contenues dans des variables, vous avez tout intérêt à les enregistrer sous forme de <b>constante personnalisées</b></p>
-                        <p>On peut définir ces constantes soi-même <i>cf.</i> ; pour définir des constantes personnalisées, utilisez la fonction <b>define()</b>, dont la syntaxe est la suivante : <b>boolean define(string nom_cte, divers valeurs_cte, boolean casse)</b>Voir la page <a href="../00_pages/03-page.php" target="_blank">suivante</a></p>
+                        <p>On peut définir ces constantes soi-même <i>cf.</i> ; pour définir des constantes personnalisées, utilisez la fonction <b>define()</b>, dont la syntaxe est la suivante : <b>boolean define(string nom_cte, divers valeurs_cte, boolean casse)</b>Voir la page <a href="../00_pages/03-page.php" target="_blank"><b>suivante</b></a></p>
+                    </div> <!-- fin de la colonne -->
+
+                    <div class="col-sm-12 col-md-6">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Constante</th>
+                                    <th scope="col">Résultats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">PHP_VERSION</th>
+                                    <td>Version de PHP installée sur le serveur :
+                                        <?php
+                                            echo PHP_VERSION;
+                                        ?>
+                                    </td>                                    
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">PHP_OS</th>
+                                    <td>Nom du système d'exploitation du serveur :
+                                        <?php
+                                            echo PHP_OS;
+                                        ?>
+                                    </td>                      
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">DEFAULT_INCLUDE_PATH</th>
+                                    <td>Chemin d'accès aux fichiers par défaut :
+                                        <?php
+                                            echo DEFAULT_INCLUDE_PATH;
+                                        ?>
+                                    </td>                                    
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">__FILE__</th>
+                                    <td>Nom du fichier en cours d'execution:
+                                        <?php
+                                            echo __FILE__;
+                                        ?>
+                                    </td>                                    
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">__LINE__</th>
+                                    <td>Numéro de la ligne en cours d'execution :
+                                        <?php
+                                            echo __LINE__;
+                                        ?>
+                                    </td>                                    
+                                </tr>
+
+                            </tbody>
+                        </table>
+
                     </div>
+
+
                 </div>
             </main>
         </div>
