@@ -87,14 +87,87 @@
                     <div class="col-sm-12">
                         <p>L'affectation de variable consiste à donner unevaleur à une variable. Lors de la création de variable, vous ne déclarez pas sont type. C'est la valeur que vous lui affectez qui détermine son type. Dans PHP, vous pouvez affecter une variable par <b>valeur</b> ou par <b>référence</b></p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>$mavar=75;</li>
+                            <li>$mavar="Paris";</li>
+                            <li>$mavar=7*3+2/5-91%7; // PHP évlue l'expression puis affecte le résultat</li>
+                            <li>$mavar=mysql_connect($a, $b, $c); // La fonction retourne une ressource</li>
+                            <li>$mavar=isset($var&&($var==9)); //La fonction retourne une valeur boléenne</li>
                         </ul>
-                    </div>
+                    </div> <!-- fin de la colonne -->
+                </div> <!-- fin de la rangée -->
+
+                <hr>
+
+                <div class="row">
+                    <h2 class="col-sm-12 text-center" id="variablesPredefinies"><u>3 - Les variables prédéfinies</u></h2>
+                    <div class="col-sm-12">
+                        <p>Le PHP dispose d'un grand nombre de variables prédéfinies qui contiennent des informations à la fois sur le serveur et sur toutes les données qui peuvent transiter entre le poste client et le serveur, comme les valeurs saisies dans un formulaire, les cookies ou les sessions.</p>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Variable</th>
+                                    <th scope="col">Utilisation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">$GLOBALS</th>
+                                    <td>Contient le nom et la valeur de toutes les variables globales du script. Les noms de variables sont les clés de ce tableau. <code>$GLOBALS["mavar"]</code> récupère la valeur de la variable $mavar en dehors de sa zone de visibilité (dans les fonctions par exemple)</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">$_COOKIE</th>
+                                    <td>Contient le nom et la valeur des cookies enregistrés sur le poste client. Les noms des cookies sont les clés de ce tableau</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">$_ENV</th>
+                                    <td>Contient le nom et la valeur des variables d'environnements qui sont changeantes selon les serveurs</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">$_FILES</th>
+                                    <td>Contient le nom et la valeur des fichiers téléchargés à partir du poste du client</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">$_GET</th>
+                                    <td>Contient le nom et la valeur des données issues d'un formulaire envoyé par la méthode GET. Les noms des champs sont les clés dans ce tableau.</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">$_POST</th>
+                                    <td>Contient le nom et la valeur des données issues d'un formulaire envoyé par la méthode POST. Les noms des champs sont les clés dans ce tableau.</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">$REQUEST</th>
+                                    <td>Contient l'ensemble des variables <b>superglobales :</b> $_GET, $_POST, $_COOKIE et $_FILES</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">$SERVER</th>
+                                    <td>Contient les informations liées au serveur web, tel que le contenu des en-têtes HTTP ou le nom du script en cours d'execution. Retenons les variables suivantes :
+                                    <ul>
+                                        <li><code>$_SERVER["HTTP_ACCESS_LANGUAGE"]</code>, qui contient le code de langue du navigateur client</li>
+                                        <li><code>$_SERVER["HTTP_COOKIE"]</code>, qui contient le nom et la valeur du cookie lus sur le poste client</li>
+                                        <li><code>$_SERVER["HTTP_HOST"]</code>, qui contient le nom de domaine</li>
+                                        <li><code>$_SERVER["PHP_SELF"]</code>, qui contient le nom du script en cours. Nous l'utiliserons souvent dans les formulaires.</li>
+                                        <li><code>$_SERVER["SERVER_ADDR"]</code>, qui indique l'adresse IP du serveur</li>
+                                        <li><code>$_SERVER["QUERY_STRING"]</code>, qui contient la chaîne de la requête utilisée pour accéder au script</li>
+                                    </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">$_SESSION</th>
+                                    <td>Contient l'ensemble des noms des variables de session et leurs valeurs.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!-- Fin de la colonne (COL) -->
                 </div>
+                <hr>
+                
             </main>
         </div>
 
