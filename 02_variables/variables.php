@@ -724,7 +724,7 @@
                         <ul class="alert alert-success w-50 mx-auto">
                             <?php
                             for ($i = 0; $i < count($tableauMulti); $i++) {
-                                echo "<li>" . $tableauMulti[$i]['prenom'] . " "  . $tableauMulti[$i]['nom'] . "</li>";
+                                echo "<li>" . $tableauMulti[$i]['prenom'] . " "  . $tableauMulti[$i]['nom'] . " " .$tableauMulti[$i]['tel'] ."</li>";
                             }
                             ?>
                         </ul>
