@@ -219,20 +219,25 @@
         </div> <!-- fin de la partie principale col-8 -->
 
         <div class="col-sm2 aside">
-        <ul>
-            <li><a href="#conditions">Les conditions</a>
-                <ul>
-                    <li><a href="#if">IF</a></li>
-                    <li><a href="#ifelse">IF...ELSE</a></li>
-                    <li><a href="#ifElseIf">IF...ELSE...IF</a></li>
-                    <li><a href="ternaire">TERNAIRE</a></li>
-                    <li><a href="switch">SWITCH</a></li>
-                </ul>
-            </li>
-            <li><a href="#while">Les boucles</a></li>
-        </ul>
+            <ul>
+                <li><a href="#conditions">Les conditions</a>
+                    <ul>
+                        <li><a href="#if">IF</a></li>
+                        <li><a href="#ifelse">IF...ELSE</a></li>
+                        <li><a href="#ifElseIf">IF...ELSE...IF</a></li>
+                        <li><a href="ternaire">TERNAIRE</a></li>
+                        <li><a href="switch">SWITCH</a></li>
+                    </ul>
+                </li>
+                <li><a href="#while">Les boucles</a></li>
+            </ul>
         </div>
+
     </div>
+
+    <!-- Fin du bloc principal -->
+
+
     <!-- LE FOOTER EN REQUIRE -->
     <?php
     require("../inc/footer.inc.php")
