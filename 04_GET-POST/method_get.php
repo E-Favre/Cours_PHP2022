@@ -42,10 +42,14 @@
         <div class="col-sm-8">
             <main class="container-fluid">
                 <div class="row">
-                    <?php
-                    $x = "9";
-                    jevar_dump($x);
-                    ?>
+                   <hr>
+                   <h2 class="col-sm-12 text-center" id="definition"><u>1 - Introduction</u></h2>
+                   <div class="col-sm-12 col-md-6">
+                       <p>Il s'agit d'une <b>super-globale</b> et comme toutes les super-globales, c'est un <b>tableau</b>. Super-Globale signifie que c'est une variable disponible partout dans le script, y compris au seoin des fonctions. Les informations transitent dans l'URL selon la syntaxe suivante : <code>mapage.php?indice1=valeur1&indiceN=valeurN;</code>.</p>
+
+                       <p>Quand on récupère les données, $_GET fabrique un tableau selon le schéma suivant : <code>$_GET = array('indice1' => 'valeur1' , 'indiceN' , => 'valeurN');</code></p>
+                   </div> <!-- fin de la colonne -->
+                   
                 </div>
             </main>
         </div>
