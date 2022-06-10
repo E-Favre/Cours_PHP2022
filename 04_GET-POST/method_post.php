@@ -83,7 +83,7 @@
                     </div> <!-- Fin de la colonne -->
 
                     <div class="col-sm-12 col-md-6">
-                        <h2 class="col-sm-12 text-center"><u>2 - Récupération des données</u></h2>
+                        <h2 class="col-sm-12 text-center" id="recuperation"><u>2 - Récupération des données</u></h2>
                         <ul>
                             <li>$_POST est une <b>super-globale</b> qui permet de récuperer les données saisies dans un formulaire</li>
                             <li>$_POST est donc un tableau <b>[array]</b> et il est disponible dans tous les contextes du script</li>
@@ -104,9 +104,9 @@
                             echo "<p>Commentaire: " .$_POST['commentaire']. "</p></div>";
 
                         }
-                    ?>                            
+                        ?>                            
                     </div>
-                </div> <!-- Fin de la rangée -->
+                </div> <!-- Fin de la ROW -->
 
             </main>
         </div>

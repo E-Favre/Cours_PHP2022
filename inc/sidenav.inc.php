@@ -85,13 +85,13 @@
             <a href="#exerciceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Exercices</a>
             <ul class="collapse list-unstyled" id="exerciceSubmenu">
                 <li>
-                    <a href="../05_exos/01-exo.php">Page 1</a>
+                    <a href="../10_exos/01-exo.php">Page 1</a>
                 </li>
                 <li>
-                    <a href="../05_exos/02-exo.php">Page 2</a>
+                    <a href="../10_exos/02-exo.php">Page 2</a>
                 </li>
                 <li>
-                    <a href="../05_exos/03-exo.php">Page 3</a>
+                    <a href="../10_exos/03-exo.php">Page 3</a>
                 </li>
             </ul>
         </li>
