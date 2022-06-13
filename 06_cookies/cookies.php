@@ -2,20 +2,19 @@
 require_once('../inc/functions.php');
 
 // Si une langue est passée dans l'URL (l'internaute a cliqué sur un lien de langue), on enverra cette langue dans le cookie
-if(isset($_GET['Lang'])){
-    $langue =($_GET['langue']);
+if (isset($_GET['langue'])) {
+    $langue = ($_GET['langue']);
     // jevar_dump($langue);
 
-}else if(isset($_COOKIE['langue'])){ // sinon, si on a reçu un cookie appelé langue, on a la valeur du site qui prendra la valeur de la langue
+} else if (isset($_COOKIE['langue'])) { // sinon, si on a reçu un cookie appelé langue, on a la valeur du site qui prendra la valeur de la langue
     $langue = $_COOKIE['langue'];
     jeprint_r($langue);
-
-} else{ //langue par defaut
+} else { //langue par defaut
     $langue = 'fr';
     jeprint_r($langue);
 }
 
-$expiration = time() + 365*24*60*60; // donne la date actuelle exprimée en secondes
+$expiration = time() + 365 * 24 * 60 * 60; // donne la date actuelle exprimée en secondes
 
 //Time donne la date du jour depuis le début de l'unix (1970) en secondes
 jeprint_r($expiration); //J'ajoute à la date du jour les données d'une année en secondes
@@ -39,7 +38,7 @@ setcookie('langue, $langue, $expiration'); // Fonction qui fabrique le cookie, a
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours PHP7 - PDO</title>
+    <title>Cours PHP7 - COOKIES</title>
 
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/style.css">
@@ -48,8 +47,8 @@ setcookie('langue, $langue, $expiration'); // Fonction qui fabrique le cookie, a
 <body class="bg-light">
     <!-- JUMBOTRON -->
     <div class="jumbotron bg-dark text-white text-center">
-        <h1 class="display-3">Cours PHP7 - PDO</h1>
-        <p class="lead">La variable "$pdo" est un objet qui représente la connexion à une BDD</p>
+        <h1 class="display-3">Cours PHP7 - Cookie</h1>
+        <p class="lead">La super-globale <b>$_COOKIE</b> est un petti fichier <b>4Ko max</b> déposé par le serveur sur le poste client et qui contient des informations.</p>
 
 
     </div>
@@ -70,11 +69,30 @@ setcookie('langue, $langue, $expiration'); // Fonction qui fabrique le cookie, a
                     <hr>
                     <h2 class="col-sm-12 text-center" id="">1. Introduction</h2>
                     <div class="col-sm-12">
+                        <p><u>voir axeptio pour customiser les pop-up cookie</u></p>
+                        <p>Les cookies sont automatiquement renvoyés au serveur web par le navigateur. Lorsque l'internaute navigue dans les pages concernées par le ou les cookies, PHP permet de récupérer très facilement les données contenues dans un cookie. Non seulement on peut le fabriquer mais on peut aussi le récupérer. Les informations sont stockées dans une super-globale $_COOKIE.</p>
+                        <p class="alert alert-danger w-50 mx-auto">Un cookie étant sauvegardé sur le poste de l'internaute, il peut être modifié, détourné ou volé !! On n'y met jamais d'informations personnelles comme les données bancaires, numéro de sécurité sociale, mot de passe ni même le contenu d'un panier d'achat</p>
+                        <br>
+                        <hr><br>
+                        <div class="w-75 text-center mx-auto">
+                            <!-- On envoie la langue choisie par l'URL : la valeur "FR" par exemple, est récupérée dans la superglobale $_GET  -->
 
-                    </div>
-                </div>
+                            <a href="?langue=fr" class="btn btn-success">Français</a> -
+                            <a href="?langue=es" class="btn btn-success">Espagnol</a> -
+                            <a href="?langue=it" class="btn btn-success">Italien</a> -
+                            <a href="?langue=ru" class="btn btn-success">Russe</a>
+                            <br><br>
 
-                
+
+                            <?php
+                            echo "<h3>Langue du site : $langue</h3>";
+                            echo time() . ": la date du jour exprimée en secondes depuis le 1er janvier 1970";
+                            ?>
+                        </div>
+
+                    </div> <!-- Fin de la colonne -->
+                </div> <!-- fin de la rangée -->
+
             </main>
         </div> <!-- FIN DE LA PARTIE PRINCIPALE COL-8 -->
 
