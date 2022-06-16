@@ -78,10 +78,12 @@
                         <?php
                             //Connexion à la BDD dialogue
                             $pdoDialogue = new PDO('mysql:host=localhost;dbname=dialogue', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-                            $requete = $pdoDialogue->query("SELECT * FROM commentaire WHERE pseudo = 'Daniel'");
+                            $requete = $pdoDialogue->query("SELECT * FROM commentaire");
                             $ligne = $requete->fetch(PDO::FETCH_ASSOC);
                             echo '<ul class="alert alert-success"><li>ID : ' . $ligne['id_commentaire'] . '</li><li>Pseudo : ' . $ligne['pseudo'] . '</li><li>Message : ' . $ligne['message'] . '</li></ul>';
+                        jevar_dump($pdoDialogue);
                         ?>
+                        
 
                     </div> <!-- fin de la colonne -->
                 </div> <!-- fin de la rangée -->
