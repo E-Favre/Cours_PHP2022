@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
     // déclaration d'une variable PHP
-    $variable1 = "PHP 7"
+    $variable1 = "PHP2022"
 ?> <!-- fermeture de la variable PHP -->
 <html lang="fr">
 <head>

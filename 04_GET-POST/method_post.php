@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours PHP7 - GET</title>
+    <title>Cours_php2022 - GET</title>
 
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/style.css">
@@ -26,7 +26,7 @@
 <body>
     <!-- JUMBOTRON -->
     <div class="jumbotron  text-center">
-        <h1 class="display-3">Cours PHP7 - La méthode POST</h1>
+        <h1 class="display-3">Cours_php2022 - La méthode POST</h1>
         <hr>
         <p class="lead pb-3">La méthode <code>$_POST []</code> est une <b>super-globale</b> réceptionne les données d'un formulaire</p>
     </div>

@@ -16,7 +16,7 @@ require_once('../inc/functions.php');
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours PHP7 - PDO</title>
+    <title>Cours_php2022 - PDO</title>
 
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/style.css">
@@ -25,7 +25,7 @@ require_once('../inc/functions.php');
 <body class="bg-light">
     <!-- JUMBOTRON -->
     <div class="jumbotron bg-dark text-white text-center">
-        <h1 class="display-3">Cours PHP7 - PDO</h1>
+        <h1 class="display-3">Cours_php2022 - PDO</h1>
         <p class="lead">La variable "$pdo" est un objet qui représente la connexion à une BDD</p>
 
 
@@ -239,7 +239,7 @@ require_once('../inc/functions.php');
                         $employe = $resultat->fetch(PDO::FETCH_ASSOC);
 
                         // jevar_dump($employe);
-                        echo "<p class=\"alert alert-secondary\">" . $employe['prenom'] . ' ' . $employe['nom'] . '- service: ' . $employe['service'] . '</p>';
+                        echo "<p class=\"alert alert-secondary\">" . $employe['prenom'] . ' ' . $employe['nom'] . ' - service : ' . $employe['service'] . '</p>';
 
                         echo "<hr>";
 

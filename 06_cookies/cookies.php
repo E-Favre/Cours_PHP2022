@@ -38,7 +38,7 @@ setcookie('langue, $langue, $expiration'); // Fonction qui fabrique le cookie, a
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours PHP7 - COOKIES</title>
+    <title>Cours_php2022 - COOKIES</title>
 
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +47,7 @@ setcookie('langue, $langue, $expiration'); // Fonction qui fabrique le cookie, a
 <body class="bg-light">
     <!-- JUMBOTRON -->
     <div class="jumbotron bg-dark text-white text-center">
-        <h1 class="display-3">Cours PHP7 - Cookie</h1>
+        <h1 class="display-3">Cours_php2022 - Cookie</h1>
         <p class="lead">La super-globale <b>$_COOKIE</b> est un petti fichier <b>4Ko max</b> déposé par le serveur sur le poste client et qui contient des informations.</p>
 
 

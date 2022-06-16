@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours PHP7 - Les conditions</title>
+    <title>Cours_php2022 - Les conditions</title>
 
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/style.css">
@@ -22,7 +22,7 @@
 <body class="bg-dark">
     <!-- JUMBOTRON -->
     <div class="jumbotron  text-center">
-        <h1 class="display-3">Cours PHP7 - Les conditions</h1>
+        <h1 class="display-3">Cours_php2022 - Les conditions</h1>
         <hr>
         <p class="lead bg-light">On retrouve dans PHP la plupart des instructions de contrôle des scripts. Indispensables à la gestion du déroulement d'un algorithme quelconque, ces instructions sont présentes dans tous les langages. PHP utilise une syntaxe très proche de celle du langage C. Ceux qui ont déjà pratiqué un langage tel que le C ou plus simplement JavaScript seront en pays de connaissance.</p>
     </div>
@@ -213,25 +213,29 @@
                         </p>
                     </div> <!-- fin de la colonne -->
                 </div> <!-- fin de la rangée -->
+                
+                
                 <hr>
                 <br><br>
+
+
+                <div class="col-sm2 aside">
+                    <ul>
+                        <li><a href="#conditions">Les conditions</a>
+                            <ul>
+                                <li><a href="#if">IF</a></li>
+                                <li><a href="#ifelse">IF...ELSE</a></li>
+                                <li><a href="#ifElseIf">IF...ELSE...IF</a></li>
+                                <li><a href="ternaire">TERNAIRE</a></li>
+                                <li><a href="switch">SWITCH</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#while">Les boucles</a></li>
+                    </ul>
+                </div>
             </main>
         </div> <!-- fin de la partie principale col-8 -->
 
-        <div class="col-sm2 aside">
-            <ul>
-                <li><a href="#conditions">Les conditions</a>
-                    <ul>
-                        <li><a href="#if">IF</a></li>
-                        <li><a href="#ifelse">IF...ELSE</a></li>
-                        <li><a href="#ifElseIf">IF...ELSE...IF</a></li>
-                        <li><a href="ternaire">TERNAIRE</a></li>
-                        <li><a href="switch">SWITCH</a></li>
-                    </ul>
-                </li>
-                <li><a href="#while">Les boucles</a></li>
-            </ul>
-        </div>
 
     </div>
 

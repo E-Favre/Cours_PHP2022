@@ -1,27 +1,29 @@
-<?php require_once('../inc/functions.php') ?> 
+<?php require_once('../inc/functions.php') ?>
 <!doctype html>
 <html lang="fr">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours PHP7 - Exos pratiques - 1</title>
+    <title>Cours_php2022 - Exos pratiques - 1</title>
 
     <!-- mes styles -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="bg-dark">
     <!-- JUMBOTRON -->
     <div class="jumbotron bg-dark text-white text-center">
-        <h1 class="display-3">Cours PHP7 - Premier exercice</h1>
+        <h1 class="display-3">Cours_php2022 - Premier exercice</h1>
         <p class="lead">Première page d'exercice pour le PHP</p>
     </div>
 
@@ -41,29 +43,28 @@
                     <hr>
                     <h2 class="col-sm-12 text-center" id="definition">1 - Tableau créé par la variable $_GET[]</h2>
                     <div class="col-12">
-                        <?php 
-                            // jevar_dump($_GET);
-                            if(isset($_GET['article']) && isset($_GET['couleur']) && isset($_GET['prix'])){
-                                // echo "<p>" . $_GET['article']. " - " . $_GET['couleur']. " <br> " . $_GET['prix'] . "€</p>";
-                                echo "
+                        <?php
+                        // jevar_dump($_GET);
+                        if (isset($_GET['article']) && isset($_GET['couleur']) && isset($_GET['prix'])) {
+                            // echo "<p>" . $_GET['article']. " - " . $_GET['couleur']. " <br> " . $_GET['prix'] . "€</p>";
+                            echo "
                                 <div class=\"card text-center\">
                                 <div class=\"card-header\">
                                     À la Une !
                                 </div>
                                 <div class=\"card-body\">
-                                    <h3 class=\"card-title\">" . $_GET['article'].  " " . $_GET['couleur']. "</h3>
+                                    <h3 class=\"card-title\">" . $_GET['article'] .  " " . $_GET['couleur'] . "</h3>
                                     <p class=\"card-text\">Découvrez nos vêtements de qualité en matière 100% naturelle et recyclables. Des questions ? N'hésitez pas à nous contacter, nous sommes disponibles 7j/7 et 24h/24.</p>
                                     <a href=\"#\" class=\"btn btn-primary\">Ajoutez au panier</a>
                                 </div>
                                 <div class=\"card-footer text-muted\">
-                                " . $_GET['prix']. " €
+                                " . $_GET['prix'] . " €
                                 </div>
                                 </div>";
-
-                            } else {
-                                echo "<p class=\"alert alert-danger w-50 mx-auto text-center\">Désolé, il n'y a pas de produit sur cette page</p>";
-                            }
-                        ?> 
+                        } else {
+                            echo "<p class=\"alert alert-danger w-50 mx-auto text-center\">Désolé, il n'y a pas de produit sur cette page</p>";
+                        }
+                        ?>
                     </div><!-- fin de la colonne -->
                 </div><!-- fin de la rangée -->
 
@@ -72,16 +73,6 @@
 
             </main>
         </div> <!-- FIN DE LA PARTIE PRINCIPALE COL-8 -->
-
-        <div class="col-sm-2 aside">
-            <ul>
-                <!-- DES ANCRES POUR LE COURS ET LES EXOS -->
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li></li>
-            </ul>
-        </div>
     </div>
 
     <!-- LE FOOTER EN REQUIRE -->
@@ -98,4 +89,5 @@
     <script src="../inc/sidenav.js"></script>
 
 </body>
+
 </html>
