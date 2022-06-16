@@ -10,17 +10,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours_php2022 - GET</title>
-
-    <!-- mes styles -->
+    <!-- Mes styles -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <title>Cours_php2022 - $_GET</title>
+
 </head>
 
 <body>
@@ -88,23 +90,22 @@
                             <li>$_POST est une <b>super-globale</b> qui permet de récuperer les données saisies dans un formulaire</li>
                             <li>$_POST est donc un tableau <b>[array]</b> et il est disponible dans tous les contextes du script</li>
                             <li>Le tableau $_POST se remplit de la manière suivante : <code>
-                                $_POST = array(<br>
-                                'name1' => 'valeur1'<br>
-                                'nameN' => 'valeurN'<br>)
-                            </code></li>
+                                    $_POST = array(<br>
+                                    'name1' => 'valeur1'<br>
+                                    'nameN' => 'valeurN'<br>)
+                                </code></li>
                             <li>Donc soit name1 ou nameN correspondent aux attributs "name" du formulaire et ou valeur1 et valeurN correspondent aux valeurs saisies par l'internaute.</li>
                         </ul>
 
                         <?php
-                        if(!empty($_POST)){//si $_POST n'est pas vide, c'est qu'il est rempli et donc que le formulaire a été envoyé. Notez qu'en l'état on peut l'envoyer avec des champs vides, les valeurs des $_POST étant alors des champs strings vides. En effet, on peut avoir des informations facultatives dans un formulaires, leurs inputs seront donc rarement remplis
-                            
-                            // jevardump($_POST);
-                            echo "<div class=\"alert alert-success w-100 mx-auto\"><p>Prénom: " .$_POST['prenom']. "</p>";
-                            echo "<p>Nom: " .$_POST['nom']. "</p>";
-                            echo "<p>Commentaire: " .$_POST['commentaire']. "</p></div>";
+                        if (!empty($_POST)) { //si $_POST n'est pas vide, c'est qu'il est rempli et donc que le formulaire a été envoyé. Notez qu'en l'état on peut l'envoyer avec des champs vides, les valeurs des $_POST étant alors des champs strings vides. En effet, on peut avoir des informations facultatives dans un formulaires, leurs inputs seront donc rarement remplis
 
+                            // jevardump($_POST);
+                            echo "<div class=\"alert alert-success w-100 mx-auto\"><p>Prénom: " . $_POST['prenom'] . "</p>";
+                            echo "<p>Nom: " . $_POST['nom'] . "</p>";
+                            echo "<p>Commentaire: " . $_POST['commentaire'] . "</p></div>";
                         }
-                        ?>                            
+                        ?>
                     </div>
                 </div> <!-- Fin de la ROW -->
 
@@ -119,10 +120,10 @@
         require("../inc/footer.inc.php")
         ?>
 
-        <!-- Optional JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
         <!-- le js pour la navigation  -->
         <script src="../inc/sidenav.js"></script>

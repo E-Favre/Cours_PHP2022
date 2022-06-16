@@ -7,21 +7,24 @@ session_start(); //permet de créer un fichier de session avec son identifiant o
 <html lang="fr">
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours PHP7 - La variable $_SESSION</title>
-
-    <!-- mes styles -->
+    <!-- Mes styles -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <title>Cours_php2022 - SESSION</title>
+
 </head>
 
 <body class="bg-light">
@@ -29,7 +32,7 @@ session_start(); //permet de créer un fichier de session avec son identifiant o
     <div class="jumbotron bg-dark text-white text-center">
         <h1 class="display-3">Cours PHP7 - Session</h1>
         <p class="lead">La méthode POST receptionne les données d'un formulaire. <b>$_POST est une super-globale</b>.
-    l'avantage d'une session est que les données sont enregistrées dans un fichier sur le serveur disponible et consultable sur l'ensemble des pages durant toute la navigation.</p>
+            l'avantage d'une session est que les données sont enregistrées dans un fichier sur le serveur disponible et consultable sur l'ensemble des pages durant toute la navigation.</p>
 
 
     </div>
@@ -52,13 +55,13 @@ session_start(); //permet de créer un fichier de session avec son identifiant o
                     <div class="col-sm-12">
                         <p>Les données du fichier de session sont accessibles et manipulables à partir de la super-globale <code>$_SESSION</code>.</p>
                         <?php
-                            $_SESSION['pseudo'] = 'Tintin';
-                            $_SESSION['mdp'] = 'vol747';
-                            $_SESSION['email'] = 'haddock@gmail.com';
+                        $_SESSION['pseudo'] = 'Tintin';
+                        $_SESSION['mdp'] = 'vol747';
+                        $_SESSION['email'] = 'haddock@gmail.com';
 
-                            echo "<p class=\alert alert-success\">La session est bien remplie !</p>";
-                            // jeprint_r($_SESSION);
-                            // jevar_dump($_SESSION);
+                        echo "<p class=\alert alert-success\">La session est bien remplie !</p>";
+                        // jeprint_r($_SESSION);
+                        // jevar_dump($_SESSION);
                         ?>
                         <p>Principe de session : un fichier temporaire appelé <code>session</code> est créé sur le serveur, avec un ID unique. Cette session est liée à l'internaute, et dans le même temps, un cookie est déposé sur le poste de l'internaute avec l'ID (au nom PHPSESSID). Ce cookie est détruit lorsque l'on quitte le navigateur</p>
                         <p>Le fichier de session peut contenir des informations très sensibles !! Il n'est donc pas accessibles par l'internaute</p>
@@ -81,8 +84,8 @@ session_start(); //permet de créer un fichier de session avec son identifiant o
 
                         <?php
                         if (isset($_SESSION['pseudo'])) {
-                            echo "Votre pseudo est : " .$_SESSION['pseudo']. "<br>";
-                        }else{
+                            echo "Votre pseudo est : " . $_SESSION['pseudo'] . "<br>";
+                        } else {
                             echo '<form method="post" action="">
                             <label for="pseudo">Pseudo:</label><br>
                             <input type="text" name="pseudo" id="value= ""><br>
@@ -90,7 +93,7 @@ session_start(); //permet de créer un fichier de session avec son identifiant o
                             </form>';
                         }
                         ?>
-                        
+
                     </div> <!-- Fin de la colonne -->
                 </div> <!-- fin de la rangée -->
 
@@ -104,10 +107,10 @@ session_start(); //permet de créer un fichier de session avec son identifiant o
     require("../inc/footer.inc.php")
     ?>
 
-    <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
     <!-- le js pour la navigation  -->
     <script src="../inc/sidenav.js"></script>

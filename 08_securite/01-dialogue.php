@@ -81,7 +81,6 @@
                             $requete = $pdoDialogue->query("SELECT * FROM commentaire");
                             $ligne = $requete->fetch(PDO::FETCH_ASSOC);
                             echo '<ul class="alert alert-success"><li>ID : ' . $ligne['id_commentaire'] . '</li><li>Pseudo : ' . $ligne['pseudo'] . '</li><li>Message : ' . $ligne['message'] . '</li></ul>';
-                        jevar_dump($pdoDialogue);
                         ?>
                         
 

@@ -15,15 +15,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours_php2022 - Introduction</title>
     <!-- Mes styles -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <title>Cours_php2022 - Introduction</title>
 
 </head>
 
 <body>
     <div class="jumbotron bg-secondary text-center">
-        <h1 class="display-3 pt-3">Cours_php2022</h1>
+        <h1 class="display-3 pt-3">Introduction</h1>
         <p class="lead pb-3">PHP signifie aujourd'hui Hypertext Preprocessor</p>
     </div>
 
@@ -137,13 +138,10 @@
     ?>
 
 
- <!-- Bootstrap JavaScript Libraries -->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
-<!-- le js pour la navigation  -->
-<script src="../inc/sidenav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
     <!-- le js pour la navigation  -->
     <script src="../inc/sidenav.js"></script>

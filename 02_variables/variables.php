@@ -10,13 +10,15 @@
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
-    <title>Cours_php2022 - Variables</title>
     <!-- Mes styles -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <title>Cours_php2022 - Variables</title>
 
 </head>
 
@@ -724,7 +726,7 @@
                         <ul class="alert alert-success w-50 mx-auto">
                             <?php
                             for ($i = 0; $i < count($tableauMulti); $i++) {
-                                echo "<li>" . $tableauMulti[$i]['prenom'] . " "  . $tableauMulti[$i]['nom'] . " " .$tableauMulti[$i]['tel'] ."</li>";
+                                echo "<li>" . $tableauMulti[$i]['prenom'] . " "  . $tableauMulti[$i]['nom'] . " " . $tableauMulti[$i]['tel'] . "</li>";
                             }
                             ?>
                         </ul>
@@ -738,19 +740,11 @@
     </div>
 
     <!-- fin de la partie principale, col-8 -->
-
-
-
-
-
-
-
     </div>
 
     <?php
     require('../inc/footer.inc.php'); //ici on appelle le fichier footer.inc.php
     ?>
-
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
@@ -759,7 +753,6 @@
 
     <!-- le js pour la navigation  -->
     <script src="../inc/sidenav.js"></script>
-
 </body>
 
 </html>
