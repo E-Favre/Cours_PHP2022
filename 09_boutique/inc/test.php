@@ -13,15 +13,16 @@ $ligne = $requete->fetch(PDO::FETCH_ASSOC);
 
 require_once('functions.php');
 jeprint_r($requete);
+var_dump($requete);
 
 echo "<p>Les infos de notre 1er membre :</p>";
 echo "<ul>";
-echo "<li>Prénom :" .$ligne['prenom']. "</li>";
-echo "<li>Nom :" .$ligne['nom']. "</li>";
-echo "<li>Email :" .$ligne['pseudo']. "</li>";
-echo "<li>Adresse :" .$ligne['Adresse']. "</li>";
-echo "<li>Code postal :" .$ligne['code_postal']. "</li>";
-echo "<li>Sexe :" .$ligne['sexe']. "</li>";
+echo "<li>Prénom : " .$ligne['prenom']. "</li>";
+echo "<li>Nom : " .$ligne['nom']. "</li>";
+echo "<li>Email : " .$ligne['pseudo']. "</li>";
+echo "<li>adresse : " .$ligne['adresse']. "</li>";
+echo "<li>Code postal : " .$ligne['code_postal']. "</li>";
+echo "<li>sexe : ";
 if ($ligne['civilite'] == 'f') {
     echo "Féminin";
 }else{
