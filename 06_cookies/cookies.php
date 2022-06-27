@@ -72,8 +72,8 @@ setcookie('langue, $langue, $expiration'); // Fonction qui fabrique le cookie, a
                     <hr>
                     <h2 class="col-sm-12 text-center" id="">1. Introduction</h2>
                     <div class="col-sm-12">
-                        <p><u>voir axeptio pour customiser les pop-up cookie</u></p>
-                        <p>Les cookies sont automatiquement renvoyés au serveur web par le navigateur. Lorsque l'internaute navigue dans les pages concernées par le ou les cookies, PHP permet de récupérer très facilement les données contenues dans un cookie. Non seulement on peut le fabriquer mais on peut aussi le récupérer. Les informations sont stockées dans une super-globale $_COOKIE.</p>
+                        <p><b>voir <a href="https://www.axeptio.eb/fr/home" target="blank">axeptio</a> pour customiser les pop-up cookie</b></p>
+                        <p>Les cookies sont automatiquementbrenvoyés au serveur web par le navigateur. Lorsque l'internaute navigue dans les pages concernées par le ou les cookies, PHP permet de récupérer très facilement les données contenues dans un cookie. Non seulement on peut le fabriquer mais on peut aussi le récupérer. Les informations sont stockées dans une super-globale $_COOKIE.</p>
                         <p class="alert alert-danger w-50 mx-auto">Un cookie étant sauvegardé sur le poste de l'internaute, il peut être modifié, détourné ou volé !! On n'y met jamais d'informations personnelles comme les données bancaires, numéro de sécurité sociale, mot de passe ni même le contenu d'un panier d'achat</p>
                         <br>
                         <hr><br>
