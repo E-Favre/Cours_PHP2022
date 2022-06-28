@@ -375,9 +375,9 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <§!-- fin de la colonne -->
+                    </div><!-- fin de la colonne -->
                         <div class="col-sm-12 md-3">
+                            <br>
                             <h3>B. Le type booléen</h3>
                             <p>Le type booléen ne peut contenir que deux valeurs différentes : <b>false (0)</b> ou <b>true (1)</b>, c'est un système binaire.</p>
 
@@ -390,7 +390,7 @@
                         </div>
 
                         <div class="col-sm-12">
-                            <h3 class="text-center">C. Les opérateurs booléens</h3>
+                            <h3>C. Les opérateurs booléens</h3>
                             <p>Quand ils sont associés, les opérateurs booléens servent à écrire des expressions simples ou complexes, qui sont évaluées par une valeurs booléenne <b>TRUE ou FALSE</b>. Ils seront utlisi*és dans les instructiosn conditionnelles.</p>
                             <table class="table table-striped">
                                 <thead>
@@ -479,7 +479,8 @@
                             </table>
                         </div> <!-- fin de la colonne -->
                         <div class="col-sm-12">
-                            <h3 class="text-center">D. Les opérateurs logiques</h3>
+                            <br>
+                            <h3>D. Les opérateurs logiques</h3>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -545,7 +546,8 @@
 
                 <div class="row">
                     <div class="col-sm-12">
-                        <h3 class="text-center">E. Les chaînes de caractères</h3>
+                        <br>
+                        <h3>E. Les chaînes de caractères</h3>
                         <p>Les chaînes de caractères sont, avec les nombres, les types de données les plus manipulées sur un site web. De surcroît, dans les échanges entre le client et le serveurau moyen de formaulaire, toutes les données sont transmises sous forme de chaînes, d'où leur importance.</p>
                         <p>Une chaîne de caractère est une suite de caractère alphanumériques contenue entre des guillemets simples (apostrophes) ou doubles (qui évitent d'échapper). Si une chaîne contient une variable, celle-ci est évaluée et sa valeur incorporée à la chaîne uniquement si vous utilisez des guillements (double) et non des apostrophes (simples). <br></p>
                         <?php
@@ -565,7 +567,8 @@
                         echo "<p class='alert alert-success w-75 text-center mx-auto'>" . $devise . "!</p>";
                         var_dump($devise);
                         ?>
-                        h'<div class="text-center">a) Les caractères d'échappement</div>
+                        <hr>
+                        <h4> a) Les caractères d'échappement</h4>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -631,7 +634,7 @@
                             </tbody>
                         </table>
                         <br>
-                        <h4 class="text-center">b) Concaténer des chaînes de caractères</h4>
+                        <h4>b) Concaténer des chaînes de caractères</h4>
                         <p>L'opérateur PHP de concaténation est le point (.) qui fusionne deux chaînes littérales ou contenues dans des variables en une seule chaîne.</p>
                         <p class="alert alert-success w-75 mx-auto">
                             <?php
